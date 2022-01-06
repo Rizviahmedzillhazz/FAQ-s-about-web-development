@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+
+    background: whitesmoke;
+    color: tomato;
+    /* Flex to list articles vertically */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.fa-comments{
+    display: block;
+    position: absolute;
+    color: tomato;
+    opacity: 0.1;
+    font-size: 70vh;
+    z-index:-1; /* Sets to background layer */
+    top: 12vh;
+    left: 17vw;
+}
+h1 {
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 3.5rem;
+    color: tomato;
+    margin-bottom: 1rem;
+}
+.question {
+    font-family: 'Open Sans', sans-serif;
+    width: 70vw;
+    min-width: 300px; /* For mobile */
+    margin-top: 1rem;
+}
+.question-title {
+    background: tomato;
+    color: whitesmoke;
+    font-size: 1rem;
+    padding: 0.5rem;
+    padding-left: 1rem;
+}
+.toggle-answer {
+    float: right;
+    margin-right: 1rem;
+}
+.question-text {
+    display: none; /*By deault, answers are NOT visible*/
+    color: whitesmoke;
+    opacity: 0.8;
+    padding: 1rem;
+}
+.show-FAQ .question-text {
+    display: block;   /* When show-FAQ is present, question-text shows */
+    background: tomato;
+}
+ 
+.closeFAQ {
+    display: none;  /*By deault, close arrow not visible*/
+}
+ 
+.show-FAQ .closeFAQ {
+    display: inline; /*When show-FAQ class present, closeFAQ arrow visible*/
+}
+ 
+.show-FAQ .expandFAQ {
+    display: none;  /*When show-FAQ class present, expandFAQ arrow NOT visible*/
+}
